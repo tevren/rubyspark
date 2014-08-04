@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'optparse'
+require File.dirname(__FILE__) + '/../lib/rubyspark'
+
+options_parser = OptionParser.new do |opts|
+  opts.banner = "Usage: #{File.basename($0)} 1 5 22 13 53 \n => ▁▁▃▂▇"
+
+  opts.on_tail("-h", "--help", "Show this message") do
+    puts opts
+    exit
+  end
+end
+options_parser.parse!
+
+if ARGV.length == 0
+  STDERR.puts options_parser
+  exit 1
+end
+
+Rubyspark::Spark.new(ARGV)
