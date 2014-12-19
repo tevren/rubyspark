@@ -18,4 +18,5 @@ deploy:
   gem: rubyspark
   on:
     tags: true
+    all_branches: true
     repo: tevren/rubyspark
