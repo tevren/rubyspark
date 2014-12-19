@@ -1,4 +1,5 @@
 # Rubyspark
+[![Build Status](https://travis-ci.org/tevren/rubyspark.svg?branch=master)](https://travis-ci.org/tevren/rubyspark)
 
 A ruby port of [Spark](http://zachholman.com/spark/)
 

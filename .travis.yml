@@ -1,0 +1,23 @@
+language: ruby
+rvm:
+- 2.1.0
+- ruby-head
+- ree
+- 1.9.3
+script: bundle exec rake test
+notifications:
+  email:
+    recipients:
+    - anurag@mohanty.io
+    on_success:
+    - always|never|change
+    on_failure:
+    - always|never|change
+deploy:
+  provider: rubygems
+  api_key:
+    secure: efDPrvfQCmfqPkQ+frt9g0uhbC542EzSZYLJLieBADmsZLEKCipWS3rY1WsP9NRKtKIN9LPg/UnDksVrjAFfqr0ZHMfzBsarSjpY/aHQjuABm+Yf2EpBxyRAZzREAWjem3FYSuNWcSGKfFH4+wOlrxmYbtuTfE44Q/VmjL761CI=
+  gem: rubyspark
+  on:
+    tags: true
+    repo: tevren/rubyspark

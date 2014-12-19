@@ -4,9 +4,9 @@ require 'optparse'
 require File.dirname(__FILE__) + '/../lib/rubyspark'
 
 options_parser = OptionParser.new do |opts|
-  opts.banner = "Usage: #{File.basename($0)} 1 5 22 13 53 \n => ▁▁▃▂▇"
+  opts.banner = "Usage: #{File.basename($PROGRAM_NAME)} 1 5 22 13 53 \n => ▁▁▃▂▇"
 
-  opts.on_tail("-h", "--help", "Show this message") do
+  opts.on_tail('-h', '--help', 'Show this message') do
     puts opts
     exit
   end
