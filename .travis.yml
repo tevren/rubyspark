@@ -2,8 +2,6 @@ language: ruby
 rvm:
 - 2.1.0
 - ruby-head
-- ree
-- 1.9.3
 script: bundle exec rake test
 notifications:
   email:
