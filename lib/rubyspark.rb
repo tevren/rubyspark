@@ -14,11 +14,13 @@ module Rubyspark
     #
     # @param x [Fixnum] data point from input array
     # @param distance [Fixnum] the max/size of ticks array
+    # @return [Fixnum] the position on the ticks array for the value of x
     def compute x, distance
       (x / distance).round - 1
     end
 
     # Graphs data, takes data and maps it against flat map of ticks
+    # @return [String] sparkline output in STDOUT
     def graphit
       ticks = %w(▁ ▂ ▃ ▄ ▅ ▆ ▇)
       distance = @data.max.to_f / ticks.size
