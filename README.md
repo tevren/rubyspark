@@ -1,5 +1,4 @@
-# Rubyspark
-[![Build Status](https://travis-ci.org/tevren/rubyspark.svg?branch=master)](https://travis-ci.org/tevren/rubyspark)
+# Rubyspark [![Build Status](https://travis-ci.org/tevren/rubyspark.svg?branch=master)](https://travis-ci.org/tevren/rubyspark) [![Gem Version](https://badge.fury.io/rb/rubyspark.svg)](http://badge.fury.io/rb/rubyspark) [![Code Climate](https://codeclimate.com/github/tevren/rubyspark/badges/gpa.svg)](https://codeclimate.com/github/tevren/rubyspark) [![Test Coverage](https://codeclimate.com/github/tevren/rubyspark/badges/coverage.svg)](https://codeclimate.com/github/tevren/rubyspark)
 
 A ruby port of [Spark](http://zachholman.com/spark/)
 
